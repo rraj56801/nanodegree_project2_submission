@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+ <!-- Main Activity Page -->
+    <!-- Cricket main layout -->
+    <string name="cricket_title">CRICKET</string>
+    <string name="cricket_quote_first">EAT..SLEEP..DREAM..CRICKET</string>
+    <string name="cricket_quote_second">one team..one dream..</string>
+    <string name="cricket_label">SELECT TEAM BATTING FIRST</string>
+    <string name="button_team_a">team a</string>
+    <string name="button_team_b">team b</string>
+
+    <!-- Basket main layout -->
+
+    <string name="basket_title">BASKET BALL</string>
+    <string name="button_score_counter">score counter</string>
+    <string name="button_exit">exit</string>
+
+    <!-- Basketball layout -->
+    <string name="text_team_a">TEAM A</string>
+    <string name="text_team_b">TEAM B</string>
+    <string name="button_reset">RESET</string>
+    <!--Cricket Layout -->
+   <string name="text_score_a">Score card for team A</string>
+    <string name="text_run">RUN SCORED PER BALL</string>
+    <string name="text_score_b">Score card for team B</string>
+
+</resources>

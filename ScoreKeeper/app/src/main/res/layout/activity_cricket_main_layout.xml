@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cricket_main_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/cricket_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:padding="4dp"
+            android:text="@string/cricket_title"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_below="@id/cricket_textview"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:text="@string/cricket_quote_first"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_below="@id/cricket_textview"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:text="@string/cricket_quote_second"
+            android:textAlignment="center"
+            android:textSize="24dp" />
+
+
+        <TextView
+            android:id="@+id/long_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:padding="4dp"
+            android:text="@string/cricket_label"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:id="@+id/button_team_a"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/long_textView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:onClick="cricketDisplayA"
+                android:padding="8dp"
+                android:text="@string/button_team_a" />
+
+            <Button
+                android:id="@+id/button_team_b"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/long_textView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/button_team_a"
+                android:layout_weight="1"
+                android:onClick="cricketDisplayB"
+                android:padding="8dp"
+                android:text="@string/button_team_b" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
