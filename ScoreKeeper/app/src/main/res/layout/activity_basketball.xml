@@ -20,65 +20,35 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:fontFamily="sans-serif-medium"
-                android:padding="4dp"
-                android:text="@string/text_team_a"
-                android:textAllCaps="true"
-                android:textColor="#616161"
-                android:textSize="14sp" />
+                style="@style/Custom_TextView_Team"
+                android:text="@string/text_team_a" />
 
             <TextView
                 android:id="@+id/team_a_score"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:fontFamily="sans-serif-light"
-                android:text="0"
-                android:textAllCaps="true"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                style="@style/Custom_TextView_Score"
+                android:text="0" />
 
 
             <Button
                 android:id="@+id/team_a_three_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="24dp"
-                android:padding="4dp"
-                android:text="+3 Point"
-                android:textAllCaps="true" />
+                style="@style/CustomButtonStyle"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="+3 Point" />
 
             <Button
                 android:id="@+id/team_a_two_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:padding="4dp"
-                android:text="+2 Point"
-                android:textAllCaps="true" />
+                style="@style/CustomButtonStyle"
+                android:text="+2 Point" />
 
             <Button
                 android:id="@+id/team_a_one_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:padding="4dp"
-                android:text="free throw"
-                android:textAllCaps="true" />
+                style="@style/CustomButtonStyle"
+                android:text="+1 Point" />
 
         </LinearLayout>
 
         <View
-            android:layout_width="4dp"
+            android:layout_width="@dimen/dimension_four"
             android:layout_height="match_parent" />
 
         <LinearLayout
@@ -89,61 +59,31 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:fontFamily="sans-serif-medium"
-                android:padding="4dp"
-                android:text="@string/text_team_b"
-                android:textAllCaps="true"
-                android:textColor="#616161"
-                android:textSize="14sp" />
+                style="@style/Custom_TextView_Team"
+                android:text="@string/text_team_b" />
 
             <TextView
                 android:id="@+id/team_b_score"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:fontFamily="sans-serif-light"
-                android:text="0"
-                android:textAllCaps="true"
-                android:textColor="#000000"
-                android:textSize="56sp" />
+                style="@style/Custom_TextView_Score"
+                android:text="0" />
 
 
             <Button
                 android:id="@+id/team_b_three_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="24dp"
-                android:padding="4dp"
-                android:text="+3 Point"
-                android:textAllCaps="true" />
+                style="@style/CustomButtonStyle"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="+3 Point" />
 
             <Button
                 android:id="@+id/team_b_two_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:padding="4dp"
-                android:text="+2 Point"
-                android:textAllCaps="true" />
+                style="@style/CustomButtonStyle"
+                android:text="+3 Point" />
 
             <Button
 
                 android:id="@+id/team_b_one_score"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-                android:padding="4dp"
-                android:text="free throw"
-                android:textAllCaps="true" />
+                style="@style/CustomButtonStyle"
+                android:text="+3 Point" />
 
 
         </LinearLayout>
@@ -157,7 +97,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="32dp"
-        android:padding="4dp"
+        android:padding="@dimen/dimension_four"
         android:text="@string/button_reset" />
 
 </RelativeLayout>

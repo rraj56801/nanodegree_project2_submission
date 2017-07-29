@@ -17,7 +17,7 @@
         <View
             android:id="@+id/view_id"
             android:layout_width="match_parent"
-            android:layout_height="5dp"
+            android:layout_height="@dimen/dimension_four"
             android:background="@android:color/holo_blue_dark" />
 
         <TextView
@@ -25,20 +25,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:padding="4dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:padding="@dimen/dimension_four"
             android:text="@string/basket_title"
             android:textAllCaps="true"
-            android:textColor="#000000"
+            android:textColor="@color/black_color"
             android:textSize="40sp" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/dimension_eight"
             android:onClick="scoreBasket"
-            android:padding="8dp"
+            android:padding="@dimen/dimension_eight"
             android:text="@string/button_score_counter"
             android:textSize="16sp" />
 
@@ -46,9 +46,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/dimension_eight"
             android:onClick="systemExit"
-            android:padding="8dp"
+            android:padding="@dimen/dimension_eight"
             android:text="@string/button_exit"
             android:textSize="16sp" />
 

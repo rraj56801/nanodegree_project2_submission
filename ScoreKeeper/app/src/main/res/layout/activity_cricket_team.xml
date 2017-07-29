@@ -4,7 +4,7 @@
     android:id="@+id/cricket_team_cricket_id"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp"
+    android:layout_margin="@dimen/dimension_four"
     tools:showIn="@layout/activity_main">
 
 
@@ -23,28 +23,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:padding="4dp"
+                android:padding="@dimen/dimension_four"
                 android:text="@string/text_score_a"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="#000000"
+                android:textColor="@color/black_color"
                 android:textSize="24sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingLeft="8dp">
+                android:paddingLeft="@dimen/dimension_eight">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
+                    android:padding="@dimen/dimension_four"
                     android:text="Over"
                     android:textAllCaps="true"
-                    android:textColor="#000000"
+                    android:textColor="@color/black_color"
                     android:textSize="20sp" />
 
                 <TextView
@@ -53,10 +53,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
+                    android:padding="@dimen/dimension_four"
                     android:text="0.0"
                     android:textAllCaps="true"
-                    android:textColor="#000000"
+                    android:textColor="@color/black_color"
                     android:textSize="20sp" />
 
                 <TextView
@@ -64,10 +64,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
+                    android:padding="@dimen/dimension_four"
                     android:text="SCORE"
                     android:textAllCaps="true"
-                    android:textColor="#000000"
+                    android:textColor="@color/black_color"
                     android:textSize="20sp" />
 
                 <TextView
@@ -75,13 +75,13 @@
                     android:id="@+id/score_textview_team_a_id"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
+                    android:layout_marginLeft="@dimen/dimension_four"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
+                    android:padding="@dimen/dimension_four"
                     android:text="0"
                     android:textAllCaps="true"
-                    android:textColor="#000000"
+                    android:textColor="@color/black_color"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -90,10 +90,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:padding="4dp"
+                android:padding="@dimen/dimension_four"
                 android:text="@string/text_run"
                 android:textAllCaps="true"
-                android:textColor="#000000"
+                android:textColor="@color/black_color"
                 android:textSize="24sp" />
 
             <LinearLayout
@@ -109,28 +109,18 @@
 
                     <Button
                         android:id="@+id/button_value_a_6"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="6 RUN"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="6 RUN" />
 
                     <Button
                         android:id="@+id/button_value_a_4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="4 RUN"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="4 RUN" />
 
                     <Button
                         android:id="@+id/button_value_a_3"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3 RUN"
-                        android:textSize="20sp" />
-
+                        style="@style/style_cricket_score_button"
+                        android:text="3 RUN" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -140,28 +130,18 @@
 
                     <Button
                         android:id="@+id/button_value_a_2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="2 RUN"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="2 RUN" />
 
                     <Button
                         android:id="@+id/button_value_a_1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1 RUN"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="1 RUN" />
 
                     <Button
                         android:id="@+id/button_value_a_zero"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="0 run"
-                        android:textSize="20sp" />
-
+                        style="@style/style_cricket_score_button"
+                        android:text="0 RUN" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -171,28 +151,18 @@
 
                     <Button
                         android:id="@+id/button_value_a_wide"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="wide"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="wide" />
 
                     <Button
                         android:id="@+id/button_value_a_noball"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="no ball"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="no ball" />
 
                     <Button
                         android:id="@+id/button_value_a_break"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="break"
-                        android:textSize="20sp" />
-
+                        style="@style/style_cricket_score_button"
+                        android:text="break" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -209,11 +179,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:padding="4dp"
+                android:padding="@dimen/dimension_four"
                 android:text="@string/text_score_b"
                 android:textAlignment="center"
                 android:textAllCaps="true"
-                android:textColor="#000000"
+                android:textColor="@color/black_color"
                 android:textSize="24sp" />
 
             <LinearLayout
@@ -221,7 +191,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingLeft="8dp">
+                android:paddingLeft="@dimen/dimension_eight">
 
 
                 <TextView
@@ -229,10 +199,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
+                    android:padding="@dimen/dimension_four"
                     android:text="Over"
                     android:textAllCaps="true"
-                    android:textColor="#000000"
+                    android:textColor="@color/black_color"
                     android:textSize="20sp" />
 
                 <TextView
@@ -242,10 +212,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
+                    android:padding="@dimen/dimension_four"
                     android:text="0.0"
                     android:textAllCaps="true"
-                    android:textColor="#000000"
+                    android:textColor="@color/black_color"
                     android:textSize="20sp" />
 
                 <TextView
@@ -253,23 +223,23 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
+                    android:padding="@dimen/dimension_four"
                     android:text="SCORE"
                     android:textAllCaps="true"
-                    android:textColor="#000000"
+                    android:textColor="@color/black_color"
                     android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/score_textview_team_b_id"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="4dp"
+                    android:layout_marginLeft="@dimen/dimension_four"
                     android:layout_weight="1"
                     android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
+                    android:padding="@dimen/dimension_four"
                     android:text="0"
                     android:textAllCaps="true"
-                    android:textColor="#000000"
+                    android:textColor="@color/black_color"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -279,10 +249,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:padding="4dp"
+                android:padding="@dimen/dimension_four"
                 android:text="@string/text_run"
                 android:textAllCaps="true"
-                android:textColor="#000000"
+                android:textColor="@color/black_color"
                 android:textSize="24sp" />
 
             <LinearLayout
@@ -297,27 +267,18 @@
 
                     <Button
                         android:id="@+id/button_value_b_6"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="6 RUN"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="6 RUN" />
 
                     <Button
                         android:id="@+id/button_value_b_4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="4 RUN"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="4 RUN" />
 
                     <Button
                         android:id="@+id/button_value_b_3"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="3 RUN"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="3 RUN" />
 
                 </LinearLayout>
 
@@ -328,27 +289,18 @@
 
                     <Button
                         android:id="@+id/button_value_b_2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="2 RUN"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="2 RUN" />
 
                     <Button
                         android:id="@+id/button_value_b_1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="1 RUN"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="1 RUN" />
 
                     <Button
                         android:id="@+id/button_value_b_zero"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="0 run"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="0 RUN" />
 
 
                 </LinearLayout>
@@ -360,27 +312,18 @@
 
                     <Button
                         android:id="@+id/button_value_b_wide"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="wide"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="wide" />
 
                     <Button
                         android:id="@+id/button_value_b_noball"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="no ball"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="no ball" />
 
                     <Button
                         android:id="@+id/button_value_b_break"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="break"
-                        android:textSize="20sp" />
+                        style="@style/style_cricket_score_button"
+                        android:text="break" />
 
                 </LinearLayout>
 

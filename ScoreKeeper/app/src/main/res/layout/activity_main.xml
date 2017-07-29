@@ -16,5 +16,9 @@
         <include layout="@layout/activity_basket_main_layout" />
     </LinearLayout>
 
+    <include layout="@layout/activity_basketball" />
+
+    <include layout="@layout/activity_cricket_team" />
+
 </RelativeLayout>
 

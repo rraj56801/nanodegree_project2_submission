@@ -6,7 +6,12 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
-    RelativeLayout relativeLayout, layout_cricket_main, layout_team_cricket, layout_basketball, layout_basket_main;
+
+    RelativeLayout relativeLayout;
+    RelativeLayout layout_cricket_main;
+    RelativeLayout layout_team_cricket;
+    RelativeLayout layout_basketball;
+    RelativeLayout layout_basket_main;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +23,14 @@ public class MainActivity extends AppCompatActivity {
         layout_team_cricket = (RelativeLayout) findViewById(R.id.cricket_team_cricket_id);
         layout_basket_main = (RelativeLayout) findViewById(R.id.basket_main_id);
         layout_basketball = (RelativeLayout) findViewById(R.id.layout_basket_id);
+
+        /**
+         * Setting Visibility of different layout
+         */
         layout_basketball.setVisibility(View.INVISIBLE);
         layout_team_cricket.setVisibility(View.INVISIBLE);
         layout_cricket_main.setVisibility(View.VISIBLE);
     }
-
 
     /**
      * Cricket Team A Playing First
@@ -43,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void cricketDisplayB(View view) {
-
         layout_cricket_main.setVisibility(View.INVISIBLE);
         layout_basket_main.setVisibility(View.INVISIBLE);
         layout_team_cricket.setVisibility(View.VISIBLE);
